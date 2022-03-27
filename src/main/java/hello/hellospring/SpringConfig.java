@@ -16,14 +16,9 @@ public class SpringConfig {
     private DataSource dataSource;
     private EntityManager em;
 
-    public SpringConfig(DataSource dataSource, EntityManager em) {
-        this.dataSource = dataSource;
-        this.em = em;
-    }
-
     @Autowired
-    public SpringConfig(DataSource dataSource) {
-        this.dataSource = dataSource;
+    public SpringConfig(DataSource dataSource, EntityManager em) {
+        this.em = em;
     }
 
     @Bean
