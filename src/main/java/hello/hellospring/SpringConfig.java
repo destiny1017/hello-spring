@@ -32,6 +32,11 @@ public class SpringConfig {
         return new MemberService(memberRepository);
     }
 
+/*    @Bean
+    public TimeTraceAop timeTraceAop() {
+        return new TimeTraceAop();
+    }*/
+
     // Spring Data JPA 사용 시에는 필요하지않음
 /*    @Bean
     public MemberRepository memberRepository() {
